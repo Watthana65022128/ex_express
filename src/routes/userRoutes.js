@@ -7,7 +7,7 @@ const userController = require('../controllers/userController');
 const {
   validateUser,
   validateUserId
-} = require('../middlewares/validateUser');
+} = require('../middleware/validateUser');
 
 router.post('/', validateUser, userController.register);
 
