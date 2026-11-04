@@ -10,7 +10,6 @@ const {
 } = require('../middleware/validateUser');
 
 router.post('/', validateUser, userController.register);
-
 router.get('/', userController.getUsers);
 router.get('/:id', validateUserId, userController.getUserById);
 router.patch('/:id', validateUserId, validateUser, userController.updateUser);

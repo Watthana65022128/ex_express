@@ -62,7 +62,6 @@ const updateUser = async (id, data) => {
   return toPublicUser(user);
 };
 
-// DELETE: Delete user
 const deleteUser = async (id) => {
   const user = await User.findByIdAndDelete(id);
 
